@@ -3,7 +3,7 @@ express-geoservices-adaptor
 
 ## Coming Soon
 
-This repo is still under development. It has been forked from [node-geoservices-adaptor](/Esri/node-geoservices-adaptor) in order to create an [ExpressJS](http://expressjs.com) Middleware to host a GeoServices REST API Service for serving up Geospatial data.
+This repo is still under development. It has been forked from [node-geoservices-adaptor](https://github.com/Esri/node-geoservices-adaptor) in order to create an [ExpressJS](http://expressjs.com) Middleware to host a GeoServices REST API Service for serving up Geospatial data.
 
 ## Licensing
 
