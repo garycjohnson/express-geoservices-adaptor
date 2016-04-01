@@ -3,6 +3,8 @@ express-geoservices-adaptor
 
 This is an [ExpressJS](http://expressjs.com) Middleware to host a "GeoServices" REST API Service that serves up Geospatial data as Feature Services that can be consumed by clients such as Esri's ArcGIS Online, ArcMap and ArcGIS Pro.
 
+Forked from [Esri/node-geoservices-adaptor](https://github.com/Esri/node-geoservices-adaptor).
+
 ##Data Provider
 A data provider must inherit from the DataProviderBase class to connect to your data source to return data through the API. The [simple-data-source.js](example/simple-data-source.js) gives a great example of creating your custom data provider and includes comments describing each method to be implemented.
 
