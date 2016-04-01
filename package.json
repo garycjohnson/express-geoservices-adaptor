@@ -1,15 +1,36 @@
 {
-  "name": "node-geoservices-adaptor",
+  "name": "express-geoservices-adaptor",
   "version": "0.0.1",
-  "dependencies": {
-    "express": "3.x",
-    "xml2js": ">=0.2.x",
-    "async": "*",
-    "geohub": "*",
-    "terraformer": "https://github.com/nixta/Terraformer/archive/nixta-dist-node.tar.gz",
-    "request": "~2.27.0"
+  "description": "Provides an ExpressJS middleware for serving GeoServices REST API",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "example": "example"
   },
-  "engines": {
-    "node": ">= 0.8.0"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garycjohnson/express-geoservices-adaptor.git"
+  },
+  "keywords": [
+    "ExpressJS",
+    "NodeJS",
+    "GeoServices",
+    "Esri",
+    "ArcGIS"
+  ],
+  "author": "Gary C Johnson (AU)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/garycjohnson/express-geoservices-adaptor/issues"
+  },
+  "homepage": "https://github.com/garycjohnson/express-geoservices-adaptor#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.0.0",
+    "terraformer": "^1.0.5",
+    "terraformer-arcgis-parser": "^1.0.4"
   }
 }
