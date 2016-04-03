@@ -1,0 +1,37 @@
+doctype html
+HTML
+  HEAD
+    //- TODO: <title>%s (%s)</title>
+    TITLE All Layers and Tables (#{serviceid})
+    LINK(href='#{baseUrl}/ESRI.ArcGIS.SDS.REST.css',rel='stylesheet',type='text/css')
+    META(charset='utf-8')
+    META(name='viewport',content='width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no')
+    META(http-equiv='x-ua-compatible', content='ie=edge')
+
+  BODY
+    TABLE.userTable(width='100%')
+      TR
+        TD.titlecell ArcGIS REST Services Directory
+    TABLE.navTable(width='100%')
+      TBODY
+        TR(valign='top')
+          TD.breadcrumbs
+            A(href='#{baseUrl}') Home 
+            | &nbsp;&gt;&nbsp; 
+            A(href='#{baseUrl}#{servicesUrl}') services 
+            | &nbsp;&gt;&nbsp;
+            A(href='#{baseUrl}#{thisServiceUrl}') #{serviceName} (Feature Server)
+            | &nbsp;&gt;&nbsp;
+            A(href='#{baseUrl}#{layersUrl}') All Layers and Tables (#{serviceid})
+
+    TABLE
+      TR
+        TD.apiref
+          A(href='?f=pjson',target='_blank') JSON
+    .restHeader
+      H2 All Layers and Tables (#{serviceid})
+    .restBody
+      H2: B Layers:
+      | <BR/>
+      UL.
+        !{layersHTML}

@@ -1,0 +1,73 @@
+doctype html
+HTML
+  HEAD
+    TITLE #{serviceName} (Feature Server)
+    LINK(href='#{baseUrl}/ESRI.ArcGIS.SDS.REST.css',rel='stylesheet',type='text/css')
+    META(charset='utf-8')
+    META(name='viewport',content='width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no')
+    META(http-equiv='x-ua-compatible', content='ie=edge')
+
+  BODY
+    TABLE.userTable(width='100%')
+      TR
+        TD.titlecell ArcGIS REST Services Directory
+    TABLE.navTable(width='100%')
+      TBODY
+        TR(valign='top')
+          TD.breadcrumbs
+            A(href='#{baseUrl}') Home 
+            | &nbsp;&gt;&nbsp; 
+            A(href='#{baseUrl}#{servicesUrl}') services 
+            | &nbsp;&gt;&nbsp;
+            A(href='#{baseUrl}#{thisServiceUrl}') #{serviceName} (Feature Server)
+    TABLE
+      TR
+        TD.apiref
+          A(href='?f=pjson',target='_blank') JSON
+    .restHeader
+      H2 #{serviceName} (Feature Server)
+    .restBody
+      B View In: 
+      | (Not Yet Implemented) 
+      | <BR/><BR/>
+      B Service Description: 
+      | #{json.serviceDescription}
+      | <BR/><BR/>
+      B Has Versioned Data: 
+      | #{json.hasVersionedData}
+      | <BR/><BR/>
+      B Max Record Count: 
+      | #{json.maxRecordCount}
+      | <BR/><BR/>
+      B Supported query Formats: 
+      | #{json.supportedQueryFormats}
+      | <BR/><BR/>
+      A(href='#') All Layers and Tables (Not Yet Implemented)
+      | <BR/><BR/>
+      B Layers: 
+      | <BR/>
+      UL.
+        !{layerList}
+      | <BR/>
+      B Description: 
+      | #{json.description}
+      | <BR/><BR/>
+      B Copyright Text: 
+      | #{json.copyrightText}
+      | <BR/><BR/>
+      B Spatial Reference: 
+      | #{json.spatialReference.wkid}
+      | <BR/><BR/>
+      B Initial Extent: 
+      | <BR/>
+      | !{initialExtent}
+      B Full Extent: 
+      | <BR/>
+      | !{fullExtent}
+      | <BR/>
+      B Units: 
+      | #{json.units}
+      | <BR/><BR/>
+      B Supported Operations: 
+      | None
+      | <BR/><BR/>

@@ -1,0 +1,19 @@
+doctype html
+HTML
+  HEAD
+    TITLE Geoservices Data Providers
+    LINK(href='#{baseUrl}/ESRI.ArcGIS.SDS.REST.css',rel='stylesheet',type='text/css')
+    META(charset='utf-8')
+    META(name='viewport',content='width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no')
+    META(http-equiv='x-ua-compatible', content='ie=edge')
+
+  BODY
+    TABLE.userTable(width='100%')
+      TR
+        TD.titlecell Virtual Services - Top-level REST Endpoints
+    .restHeader
+      H2 Geoservices Data Providers:
+    .restBody
+      B Data Providers: <BR/><BR/>
+      UL#servicesList.
+        !{servicesList}

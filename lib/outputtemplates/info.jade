@@ -1,0 +1,40 @@
+doctype html
+HTML
+  HEAD
+    TITLE Server Info
+    LINK(href='#{baseUrl}/ESRI.ArcGIS.SDS.REST.css',rel='stylesheet',type='text/css')
+    META(charset='utf-8')
+    META(name='viewport',content='width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no')
+    META(http-equiv='x-ua-compatible', content='ie=edge')
+
+  BODY
+    TABLE.userTable(width='100%')
+      TR
+        TD.titlecell ArcGIS REST Services Directory
+    TABLE.navTable(width='100%')
+      TBODY
+        TR(valign='top')
+          TD.breadcrumbs
+            A(href='#{baseUrl}#{servicesUrl}') Home
+    TABLE
+      TR
+        TD.apiref
+          A(href='?f=pjson',target='_blank') JSON
+    .restHeader
+      H2 Server Info
+    .restBody
+      B Current Version: 
+      | #{currentVersion}
+      | <BR/><BR/>
+      B Full version: 
+      | #{fullVersion}
+      | <BR/><BR/>
+      B Authentication Information: 
+      | <BR/><BR/>
+      B Owning System Url: 
+      | http://www.arcgis.com
+      | <BR/><BR/>
+      UL
+        LI
+          B: I Is Token Based Security
+          | true
