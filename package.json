@@ -1,6 +1,6 @@
 {
   "name": "express-geoservices-adaptor",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Provides an ExpressJS middleware for serving GeoServices REST API",
   "main": "index.js",
   "directories": {
